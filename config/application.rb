@@ -18,5 +18,7 @@ module CenterApp
     #
     config.time_zone = "Kolkata"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.assets.initialize_on_precompile = false
   end
 end
