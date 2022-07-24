@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   def index;end
 
   def show
-    @images = Dir.glob("app/assets/images/*.jpg")
+    # @images = Dir.glob("app/assets/images/*.jpg")
     @quotes = quotes_lists
   end
 

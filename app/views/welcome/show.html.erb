@@ -1,9 +1,5 @@
-<% @images.each_with_index do |image, index| %>
+<% @quotes.each do |quote| %>
   <center>
-    <h3><%= @quotes[index].gsub(/\n/, '<br>').html_safe %></h3>
-    <%= image_tag "#{image.split('/').last}",
-      class: 'w-100 rounded-circle shadow-lg d-block mx-auto',
-      style: 'max-width: 30rem; border: solid; height: 500px';%>
-  </center>
-  <br><br>
+    <h3><%= quote.gsub(/\n/, '<br>').html_safe %></h3>
+  </center> <br><br>
 <% end %>
